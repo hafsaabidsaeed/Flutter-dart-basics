@@ -206,59 +206,59 @@ import 'dart:io';
 //   }
 //
 // }
-
-void main() {
-
-  print("Enter cost price");
-  int cost_price = int.parse(stdin.readLineSync().toString());
-  print("Enter selling price");
-  int sale_price = int.parse(stdin.readLineSync().toString());
-
-  //loss of profit and its percentage
-  if(sale_price>cost_price)
-    {
-      int profit= sale_price-cost_price;
-      double p = (profit/cost_price)*100;
-      print("Profit of $p %");
-
-      print("Enter your age: ");
-      int age= int.parse(stdin.readLineSync().toString());
-      if(age<10)
-        {
-          //put 5% discount
-          double discount_amount_5 = (5/100)*sale_price ;
-          double discount_price_5 = sale_price - discount_amount_5;
-
-          print('The price after 5% discount is $discount_price_5');
-
-        }
-      else if(age>=10 && age<=20)
-        {
-          //put 7.5% discount
-          double discount_amount_7 = (7.5/100)*sale_price ;
-          double discount_price_7 = sale_price - discount_amount_7;
-
-          print('The price after 7.5% discount is $discount_price_7');
-
-        }
-      else if (age>=31 && age<=40)
-        {
-
-        }
-      else
-        {
-
-        }
-    }
-
-  else if(sale_price<cost_price)
-    {
-      int loss= sale_price-cost_price;
-      double l= (loss/cost_price)*100;
-      print("loss of $l");
-    }
-
-  else{
-    print("No profit or loss");
-  }
-}
+//
+// void main() {
+//
+//   print("Enter cost price");
+//   int cost_price = int.parse(stdin.readLineSync().toString());
+//   print("Enter selling price");
+//   int sale_price = int.parse(stdin.readLineSync().toString());
+//
+//   //loss of profit and its percentage
+//   if(sale_price>cost_price)
+//     {
+//       int profit= sale_price-cost_price;
+//       double p = (profit/cost_price)*100;
+//       print("Profit of $p %");
+//
+//       print("Enter your age: ");
+//       int age= int.parse(stdin.readLineSync().toString());
+//       if(age<10)
+//         {
+//           //put 5% discount
+//           double discount_amount_5 = (5/100)*sale_price ;
+//           double discount_price_5 = sale_price - discount_amount_5;
+//
+//           print('The price after 5% discount is $discount_price_5');
+//
+//         }
+//       else if(age>=10 && age<=20)
+//         {
+//           //put 7.5% discount
+//           double discount_amount_7 = (7.5/100)*sale_price ;
+//           double discount_price_7 = sale_price - discount_amount_7;
+//
+//           print('The price after 7.5% discount is $discount_price_7');
+//
+//         }
+//       else if (age>=31 && age<=40)
+//         {
+//
+//         }
+//       else
+//         {
+//
+//         }
+//     }
+//
+//   else if(sale_price<cost_price)
+//     {
+//       int loss= sale_price-cost_price;
+//       double l= (loss/cost_price)*100;
+//       print("loss of $l");
+//     }
+//
+//   else{
+//     print("No profit or loss");
+//   }
+// }
